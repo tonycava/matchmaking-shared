@@ -1,3 +1,4 @@
+export declare type Role = "ADMIN" | "USER";
 export declare type Chat = {
     id: string;
     userId: string;
@@ -5,6 +6,7 @@ export declare type Chat = {
     createdAt: Date;
     user: {
         username: string;
+        role: Role;
     };
 };
 export declare enum WEB_SOCKET_EVENT {

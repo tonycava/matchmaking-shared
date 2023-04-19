@@ -1,9 +1,11 @@
+export type Role = "ADMIN" | "USER"
+
 export type Chat = {
 	id: string;
 	userId: string;
 	content: string;
 	createdAt: Date;
-	user: { username: string };
+	user: { username: string, role: Role };
 };
 
 export enum WEB_SOCKET_EVENT {
