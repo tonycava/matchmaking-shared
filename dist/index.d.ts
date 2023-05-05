@@ -9,6 +9,21 @@ export declare type Chat = {
         role: Role;
     };
 };
+export declare type Direct = {
+    id: string;
+    createdAt: Date;
+    personWhoSendId: string;
+    personWhoRecivedId: string;
+    content: string;
+};
+export declare type Conversation = {
+    content: string;
+    personWhoRecived: {
+        id: string;
+        username: string;
+        profilePicture: string;
+    };
+};
 export declare enum WEB_SOCKET_EVENT {
     CONNECT = "connect",
     LEAVE_WAITING = "leaveWaiting",
